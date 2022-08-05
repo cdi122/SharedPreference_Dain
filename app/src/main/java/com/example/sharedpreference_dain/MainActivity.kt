@@ -11,10 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        autoLoginCheckBox.setOnCheckedChangeListener { button, isChecked ->  }
-        ContextUtil.setAutoLogin(this, isChecked)
+        autoLoginCheckBox.setOnCheckedChangeListener { button, isChecked ->
+            ContextUtil.setAutoLogin(this, isChecked)
+
+
 
         }
-    autoLoginCheckBox.ischecked = ContextUtil.getAutoLogin(this)
+    autoLoginCheckBox.isChecked = ContextUtil.getAutoLogin(this)
     }
  }
